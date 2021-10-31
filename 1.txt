@@ -1,0 +1,270 @@
+a@LAPTOP-CC2SN302 MINGW64 ~
+$ git config-global user.name"sileaver"
+git: 'config-global' is not a git command. See 'git --help'.
+
+a@LAPTOP-CC2SN302 MINGW64 ~
+$ git config --global user.name"sileaver"
+
+a@LAPTOP-CC2SN302 MINGW64 ~
+$ git config --global use.email "541127889@qq.com"
+
+a@LAPTOP-CC2SN302 MINGW64 ~
+$ C:\Users\a\Desktop\dandanmian
+bash: C:UsersaDesktopdandanmian: command not found
+
+a@LAPTOP-CC2SN302 MINGW64 ~
+$ cd C:\Users\a\Desktop\dandanmian
+bash: cd: C:UsersaDesktopdandanmian: No such file or directory
+
+a@LAPTOP-CC2SN302 MINGW64 ~
+$ pwd
+/c/Users/a
+
+a@LAPTOP-CC2SN302 MINGW64 ~
+$ dir
+3D\ Objects
+AppData
+Application\ Data
+Contacts
+Cookies
+Desktop
+Documents
+Downloads
+Favorites
+IntelGraphicsProfiles
+Links
+Local\ Settings
+Music
+My\ Documents
+NTUSER.DAT
+NTUSER.DAT{43f70264-c2ae-11eb-b6fb-e268dc194042}.TM.blf
+NTUSER.DAT{43f70264-c2ae-11eb-b6fb-e268dc194042}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{43f70264-c2ae-11eb-b6fb-e268dc194042}.TMContainer00000000000000000002.regtrans-ms
+NetHood
+OneDrive
+Pictures
+PrintHood
+Recent
+Saved\ Games
+Searches
+SendTo
+Templates
+Videos
+ansel
+miniconda3
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+pip
+「开始」菜单
+
+a@LAPTOP-CC2SN302 MINGW64 ~
+$ cd Desktop/
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop
+$ pwd
+/c/Users/a/Desktop
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop
+$ dir
+CSDN.lnk                                   zuowen.docx
+CodeBlocks.lnk                             代码写法梯子
+Dev-C++.lnk                                哔哩哔哩.lnk
+Doc1.docx                                  未命名1.cpp
+Git\ Bash.lnk                              未命名1.exe
+Git\ CMD.lnk                               未命名2.cpp
+Miniconda3-py37_4.10.3-Windows-x86_64.exe  未命名2.exe
+RaptorPortable                             未命名3.cpp
+Space                                      未命名3.exe
+Typeeasy                                   未命名5.cpp
+VComputer（PC版）                          未命名5.exe
+c                                          未命名6.cpp
+cuda                                       未命名6.exe
+cuda_11.4.2_win10_network.exe              百度网盘.lnk
+cudnn-11.4-windows-x64-v8.2.2.26.zip       百度网盘同步空间.lnk
+c程序                                      程序设计实验
+dandanmian                                 程序设计实验一报告模板.docx
+desktop.ini                                红色江西.docx
+readme.md                                  网易有道词典.lnk
+t.cpp                                      联想模拟器.lnk
+t.exe                                      计算机导论实验
+ttt.exe
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop
+$ cd d
+Dev-C++.lnk  Doc1.docx    dandanmian/  desktop.ini
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop
+$ cd d
+Dev-C++.lnk  Doc1.docx    dandanmian/  desktop.ini
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop
+$ cd dandanmian
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian
+$ git init
+Initialized empty Git repository in C:/Users/a/Desktop/dandanmian/.git/
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git remote add toy https://github.com/sileaver/dandanmian.git
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git remote -v
+toy     https://github.com/sileaver/dandanmian.git (fetch)
+toy     https://github.com/sileaver/dandanmian.git (push)
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243.txt"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hahahahello world.txt
+        hello world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git add hello world.txt
+fatal: pathspec 'hello' did not match any files
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git add 1.txt
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git commit -m "upload the new dandanmian files"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'a@LAPTOP-CC2SN302.(none)')
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git commit -m "upload the new toy files."
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'a@LAPTOP-CC2SN302.(none)')
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$  git config --global user.name "sileaver"
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git commit -m "upload the new toy files."
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'a@LAPTOP-CC2SN302.(none)')
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git config --global user.email "541127889@qq.com"
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git commit -m "upload the new toy files."
+[master (root-commit) c9593bd] upload the new toy files.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git push --set-upstream dandanmian master
+fatal: 'dandanmian' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git push --set-upstream toy master
+
+
+
+fatal: unable to access 'https://github.com/sileaver/dandanmian.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$ git push -u toy master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 214 bytes | 214.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sileaver/dandanmian.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'toy'.
+
+a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
+$
