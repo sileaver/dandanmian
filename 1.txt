@@ -113,23 +113,6 @@ $ git remote -v
 toy     https://github.com/sileaver/dandanmian.git (fetch)
 toy     https://github.com/sileaver/dandanmian.git (push)
 
-a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
-$ git status
-On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        "\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243.txt"
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
-$ git status
-On branch master
-
-No commits yet
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -245,16 +228,6 @@ $ git push --set-upstream toy master
 
 
 
-fatal: unable to access 'https://github.com/sileaver/dandanmian.git/': OpenSSL SSL_read: Connection was reset, errno 10054
-
-a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
-$
-
-a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
-$
-
-a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
-$
 
 a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
 $ git push -u toy master
@@ -266,5 +239,3 @@ To https://github.com/sileaver/dandanmian.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'toy'.
 
-a@LAPTOP-CC2SN302 MINGW64 ~/Desktop/dandanmian (master)
-$
