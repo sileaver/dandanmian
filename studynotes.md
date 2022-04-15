@@ -480,5 +480,11 @@ find . -ctime -20  #将目前目录及其子目录下所有最近 20 天内更�
 
 ### # 还学会了如何把腾讯课堂无法保存的回放爬下来，这里就不多赘述了
 
+# 部分图片炸了，之后会处理
+
+###  LaTex
+
+[(67条消息) Latex各种命令、符号、公式、数学符号、排版等_CopperDong的博客-CSDN博客_latex中数学公式](https://blog.csdn.net/QFire/article/details/81382048?ops_request_misc=%7B%22request%5Fid%22%3A%22165003628516780274141869%22%2C%22scm%22%3A%2220140713.130102334.pc%5Fall.%22%7D&request_id=165003628516780274141869&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-3-81382048.142^v9^pc_search_result_cache,157^v4^control&utm_term=latex数学公式&spm=1018.2226.3001.4187)
+
 
 
