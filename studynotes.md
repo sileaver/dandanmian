@@ -276,3 +276,209 @@ frame=cv2.addWeighted(lane_image,0.8,line_image,1,1)
 ```
 
 图像加权融合。
+
+# 图像切片
+
+```
+import cv2
+
+img = cv2.imread("./data/cut/thor.jpg")
+print(img.shape)
+cropped = img[0:128, 0:512]  # 裁剪坐标为[y0:y1, x0:x1]
+cv2.imwrite("./data/cut/cv_cut_thor.jpg", cropped)
+```
+
+cv2读取出的图像是ndarray，先y再x。
+
+# 图像处理
+
+```
+ cv2.rectangle(image, start_point, end_point, color, thickness)
+```
+
+参数：
+
+image:它是要在其上绘制矩形的图像。
+
+start_point：它是矩形的起始坐标。坐标表示为两个值的[元组](https://so.csdn.net/so/search?q=元组&spm=1001.2101.3001.7020)，即(X坐标值，Y坐标值)。
+
+end_point：它是矩形的结束坐标。坐标表示为两个值的元组，即(X坐标值ÿ坐标值)。
+
+color:它是要绘制的矩形的边界线的颜色。对于BGR，我们通过一个元组。例如：(255，0，0)为蓝色。
+
+thickness:它是矩形边框线的粗细像素。厚度-1像素将以指定的颜色填充矩形形状。
+
+```
+cv2.putText(image, '{} ID-{}-{}km/hr-{}-{}'.format(cls_id, pos_id,speed,deng,sudu), (c1[0], c1[1] - 2), 0, tl / 3,
+            [225, 255, 255], thickness=tf, lineType=cv2.LINE_AA)
+```
+
+你想写入的文本数据
+你想要放置的位置坐标（例如 数据开始于左下角）
+Font类型（参见**cv2.putText()**文档获取支持的Font ）
+字体规模（特指字体大小）
+常规内容，像颜色，粗细度，线类型等等。为了更好的视觉，推荐线条类型为 cv.LINE_AA 。
+
+```
+font = cv.FONT_HERSHEY_SIMPLEX
+cv.putText(img,"OpenCV",(10,500),font,4,(255,255,255),2,cv_LINE_AA)
+```
+
+
+
+实例
+
+```
+cv2.putText(图片img,“文本内容”,(左下角坐标),字体,字体大小,(颜色)，线条粗细，线条类型)
+
+cv2.putText(img,"paradise",(200,100),self.font,3,(100,255,0),1,cv2.LINE_AA)
+
+```
+
+![flip](C:\Users\a\Desktop\flip.png)
+
+# format方法
+
+它的基本使用格式如下：
+template.format(p0, p1, ..., k0=v0, k1=v1, ...)
+template是一个字符串，其中包括需要格式化输出的部分，这些部分各用大括号括起来{}。format后面的参数p表示第几个位置的需要格式化输出的变量。
+举个例子：
+
+>"First argument: {0}, second one: {1}".format(47,11) 
+>'First argument: 47, second one: 11'
+>"Second argument: {1}, first one: {0}".format(47,11) 
+>'Second argument: 11, first one: 47'
+
+树莓派拥有用户名，密码，和su
+
+密码一般用来干各种事确认身份
+
+su用于获得root权限
+
+sudo也是，只不过是单次
+
+1.查看当前文件夹下的文件
+dir
+
+2.返回上一/两个目录
+cd …
+cd …/…
+
+3.Tab
+直接按Tab,可以查看当前文件下的所有东西
+
+4.移动文件
+mv 文件名 移动目的地文件名
+
+5.重命名文件
+mv 文件名 修改后的文件名
+
+6.传文件
+
+本地传树莓派
+
+scp -r C:\Users\a\Desktop\shumeipai pi@192.168.3.172:/home/pi
+
+-r是文件夹
+
+树莓派传本地地址反一下就行
+
+当然，要输密码
+
+而且scp命令不需要链接ssh，直接在本地进行。
+
+有的时候github库会有问题，如ncnn的glslang无法进行get submodule --init，我的解决方法是去glslang手动clone一个，同时遇到了vulkan-tools不在源内的情况。树莓派是arm64架构，可下载arm64版本的deb安装包，类似于安卓的apk。
+
+树莓派运行c++
+
+7.装vim编译器
+
+sudo apt-get install vim
+
+8.运行文件
+
+gcc 文件名 -o 日志
+
+9.编译
+
+vim 文件名
+
+10.电脑可以通过ssh远程操控树莓派
+
+电脑应与树莓派连接在同一个网络下
+
+首先通过ifconfig命令，在wlan得到树莓派的ip，类似192.138.264.339这种
+
+然后在电脑cmd上利用ssh pi@192.138.264.339便可连接
+
+![img](https://img.linux.net.cn/data/attachment/album/201905/23/100659yig3tz5h77z734gg.png)
+
+第一次你会看到一个警告，输入 `yes` 并按下回车。
+
+# 请一定关闭电脑防火墙，不然你会发现一直超时连不上！
+
+# ![成功通过 SSH 登入](https://img.linux.net.cn/data/attachment/album/201905/23/100701shhf6o4qd4b3okfq.png)
+
+然后输入树莓派的密码并按回车
+
+成功登入你将会看到树莓派的终端。现在你可以通过这个终端无需物理上访问你的树莓派就可以远程（在当前网络内）在它上面运行指令。
+
+
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200814200424643.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MzQ2NTM0,size_16,color_FFFFFF,t_70#pic_center)
+
+类似这样。这样的好处是什么呢，直接把树莓派当电脑用巨难受。所以为啥不用电脑
+
+`-mfloat-abi=hard -mfpu=neon"`
+
+当你看见类似这种玩意报错，无法识别这种命令时，请使用以下技巧
+
+# 1.根据文件名查找文件所在目录、
+
+​            `目录      参数         文件名`
+
+`find /home -name arch_select.ccarch_select.cc`
+
+此外，find还可以用来查找过去x时间内被修改/读取过的文件：
+
+find . -ctime -20  #将目前目录及其子目录下所有最近 20 天内更新过的文件列出
+
+#-amin n : 在过去 n 分钟内被读取过
+#-atime n : 在过去n天内被读取过的文件
+#-cmin n : 在过去 n 分钟内被修改过
+#-ctime n : 在过去n天内被修改过的文件
+#-anewer file : 比文件 file 更晚被读取过的文件
+#-cnewer file :比文件 file 更新的文件
+
+
+
+# 2.查找包含某段内容的文件
+
+`                       参数     内容          目录或文件`
+
+`grep -r -l "cortex" /home/Downloads/srsLTE/`
+
+-r：表示在当前文件夹及其子目录中查找；
+-l：只输出对应文件的包含路径的文件名，不加此参数还会输出包含该内容的整段信息。
+还有一些常用参数：
+-n：显示搜索文本在文件中的行数；
+-i：忽略大小写问题；
+-w ：只显示全字符合的列；
+
+**然后就去把识别不出来的命令删了吧，也许有用。**
+
+# 报错
+
+出现`grep: invalid max count`错误，原因是某些字符需要添加转义字符`\`才能被正常识别。
+![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pY29uLnFpYW50dWNkbi5jb20vMjAyMDA3MjAvOTAyMzY0ZTQ0ODE1MmVmZTJlYjlmMGMyYjVhYmIyN2Yy?x-oss-process=image/format,png)
+
+### # 看到这的学长，有人知道下面报错怎么改吗
+
+![QQ图片20220415221241](C:\Users\a\Desktop\QQ图片20220415221241.png)
+
+# 等我部署成功了一定搞份部署的傻瓜式教程，现在都还没配好
+
+### # 还学会了如何把腾讯课堂无法保存的回放爬下来，这里就不多赘述了
+
+
+
