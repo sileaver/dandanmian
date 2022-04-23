@@ -174,7 +174,7 @@ ctrl+shift+alt+点击鼠标左键.可以在任意位置增加光标.
 
 从公式看它们都差不多：无非是减去均值，除以标准差，再施以线性映射。
 
-![image-20220109194840057](C:\Users\a\AppData\Roaming\Typora\typora-user-images\image-20220109194840057.png)
+![image-20220109194840057](http://tva2.sinaimg.cn/large/008snjoggy1h1jqormjmjj31hc0u0k7b.jpg)
 
 ### yolo
 
@@ -210,11 +210,11 @@ ctrl+shift+alt+点击鼠标左键.可以在任意位置增加光标.
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200722135043131.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzI5OTU3NDU1,size_16,color_FFFFFF,t_70)
 
-![image-20220409184643417](C:\Users\a\AppData\Roaming\Typora\typora-user-images\image-20220409184643417.png)
+![image-20220409184643417](http://tvax3.sinaimg.cn/large/008snjoggy1h1jqq1lc85j307z02374a.jpg)
 
 利用三角形面积相等原则，可以转换为
 
-![image-20220409184723418](C:\Users\a\AppData\Roaming\Typora\typora-user-images\image-20220409184723418.png)
+![image-20220409184723418](http://tva4.sinaimg.cn/large/008snjoggy1h1jqqi3rgvj309c022glr.jpg)
 
 # 代码
 
@@ -390,7 +390,7 @@ cv2.putText(img,"paradise",(200,100),self.font,3,(100,255,0),1,cv2.LINE_AA)
 
 ```
 
-![flip](C:\Users\a\Desktop\flip.png)
+![flip](http://tvax2.sinaimg.cn/large/008snjoggy1h1jqlvc4fcj30r00entf3.jpg)
 
 # format方法
 
