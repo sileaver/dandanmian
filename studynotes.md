@@ -1,3 +1,5 @@
+[TOC]
+
 # ***一份学习报告***
 
 ## *变量，字符串，数字*。
@@ -26,7 +28,7 @@ len（）确定长度
 
 我的理解是这玩意是个常数数组
 
- ## 元组不能迭代
+ ## 元组可以迭代
 
 ## *循环*（末尾打冒号）
 
@@ -44,7 +46,7 @@ Python对大小写敏感
 
 #### or
 
-#### 检查特点值是否不包含在列表中，使用关键字not in
+**检查特点值是否不包含在列表中，使用关键字not in**
 
 示例：if user not in users：
 
@@ -92,7 +94,7 @@ break之流不多赘述
 
 #### 避免崩溃，处理异常
 
-# 对神经网络有简单了解并能搭建一个简单的bp，虽然是改的。
+**对神经网络有简单了解并能搭建一个简单的bp，虽然是改的。**
 
 ## pycharm
 
@@ -415,7 +417,7 @@ vim 文件名
 
 第一次你会看到一个警告，输入 `yes` 并按下回车。
 
-# 请一定关闭电脑防火墙，不然你会发现一直超时连不上！
+请一定关闭电脑防火墙，不然你会发现一直超时连不上！
 
 # ![成功通过 SSH 登入](https://img.linux.net.cn/data/attachment/album/201905/23/100701shhf6o4qd4b3okfq.png)
 
@@ -472,13 +474,13 @@ find . -ctime -20  #将目前目录及其子目录下所有最近 20 天内更�
 出现`grep: invalid max count`错误，原因是某些字符需要添加转义字符`\`才能被正常识别。
 ![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pY29uLnFpYW50dWNkbi5jb20vMjAyMDA3MjAvOTAyMzY0ZTQ0ODE1MmVmZTJlYjlmMGMyYjVhYmIyN2Yy?x-oss-process=image/format,png)
 
-### # 看到这的学长，有人知道下面报错怎么改吗
+### 
 
-![QQ图片20220415221241](C:\Users\a\Desktop\QQ图片20220415221241.png)
 
-# 等我部署成功了一定搞份部署的傻瓜式教程，现在都还没配好
 
-### # 还学会了如何把腾讯课堂无法保存的回放爬下来，这里就不多赘述了
+# 
+
+### 
 
 # 部分图片炸了，之后会处理
 
